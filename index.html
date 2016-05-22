@@ -1,0 +1,93 @@
+<script>
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
+
+<!doctype html>
+<html>
+
+  <head>
+
+    <!-- Angular routing -->
+    <base href="/">
+
+    <!-- Meta Tag -->
+
+    <!-- Mobile view -->
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+
+    <!-- CSS -->
+
+    <!-- Include the jQuery UI CDN Library css -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <!-- Main CSS of the App -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/style-header.css">
+    <link type="text/css" rel="stylesheet" href="css/style-footer.css">
+
+    <!-- Media query CSS -->
+    <link type="text/css" rel="stylesheet" href="css/medium-header.css" media="handheld, screen and (max-width:720px), only screen and (max-device-width:720px)">
+    <link type="text/css" rel="stylesheet" href="css/small-header.css" media="handheld, screen and (max-width:480px), only screen and (max-device-width:480px)">
+
+    <!-- JS -->
+    <!-- Include Angular from Bower -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <!-- Include Angular-route from Bower -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    <!-- Include Angular-animate from Bower -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  </head>
+
+  <!-- Principal container of the application -->
+  <body data-ng-app="matteogranzotto" >
+
+    <div id="all">
+
+
+
+      <!-- AngularJS's views -->
+      <div id="wrapper">
+        <div data-ng-view>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Modules -->
+
+    <!-- JS for routing -->
+    <script src="app.js"></script>
+
+    <!-- Controllers -->
+    <script src="controllers/homeController.js"></script>
+
+
+    <!-- Services -->
+
+
+    <!-- Directives -->
+
+
+    <!-- Graphich tools -->
+
+
+  </body>
+</html>
