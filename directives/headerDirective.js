@@ -17,7 +17,9 @@ app.directive('headerDirective', function() {
       });
 
       scope.goUp= function() {
-        $("#all").removeClass("active");
+        setTimeout(function(){
+          //$("#all").removeClass("active");
+        },5000);
       };
 
     }

@@ -85,6 +85,7 @@ header
     width: 100%;
     background-color: white;
     padding-bottom: 2em;
+    overflow: auto;
 }
 
 header ul

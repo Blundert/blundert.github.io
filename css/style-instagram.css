@@ -1,6 +1,6 @@
 /*scrool*/
 section{
-  margin-top: 65px;
+  margin-top: 4em;
   overflow: auto;
   display: block;
 }
@@ -173,9 +173,7 @@ section{
 
 .loading
 {
-    margin: 0.5em;
-    padding-left: 50%;
-    margin-left: -32px;
+    margin-top: 1.5em;
     height: 64px;
     width: 64px;
 }

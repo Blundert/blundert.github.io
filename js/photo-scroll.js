@@ -108,7 +108,7 @@ app.factory("instagram", [ function() {
       function ajaxCallForIstagram()
       {
         console.log('http://localhost:3000/api/instagram?max_id='+last_id);
-        $.ajax({ url: "http://192.168.1.108:3000/api/instagram?max_id="+last_id,
+        $.ajax({ url: "https://blundert-backend.herokuapp.com/api/instagram?max_id="+last_id,
           type: 'POST',
           contentType: "application/json",
           crossDomain:true,
