@@ -1,0 +1,11 @@
+.item{
+  width: 50%;
+}
+
+.item img {
+  opacity: 1;
+}
+
+.details{
+  bottom: 0px;
+}

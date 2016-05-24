@@ -1,0 +1,30 @@
+<!-- Inizio Header -->
+<nav>
+    <ul>
+        <li><a href="{{lang}}" ng-click="goUp()"><p>{{variables.home}}</p></a></li>
+        <li><a href="{{lang}}/{{variables.bio | lowercase}}" ng-click="goUp()"><p>{{variables.bio}}</p></a></li>
+        <li><a href="{{lang}}/{{variables.projects | lowercase}}" ng-click="goUp()"><p>{{variables.projects}}</p></a></li>
+    </ul>
+    <ul>
+        <li><a href="https://www.facebook.com/GranzottoMatteo"><p lang="en">Facebook</p></a></li>
+        <li><a href="https://www.linkedin.com/in/matteogranzotto"><p lang="en">LinkedIn</p></a></li>
+    </ul>
+    <ul>
+        <li><a href="{{lang}}/instagram" ng-click="goUp()"><p lang="en">instagram</p></a></li>
+        <li><a href="https://twitter.com/Blundert"><p lang="en">Twitter</p></a></li>
+    </ul>
+</nav>
+<header>
+    <ul id="bottone-menu">
+        <li id="bottone"><a id="nav-toggle" href="#"><span></span></a></li>
+        <li><span id="menu">Menu</span></li>
+    </ul>
+    <ul class="header-titolo">
+        <li><h1>Matteo Granzotto</h1></li>
+        <li><h2>Developer</h2></li>
+    </ul>
+</header>
+
+<script src="js/header.js" type="text/javascript"></script>
+
+<!-- Fine Header -->

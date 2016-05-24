@@ -59,14 +59,25 @@
 
     <div id="all">
 
+      <!-- menu -->
+      <header-directive> </header-directive>
 
 
       <!-- AngularJS's views -->
       <div id="wrapper">
         <div data-ng-view>
-
+          <div class="contenitore-1280">
+            <div class="riferimento"></div>
+            <section>
+              <div class="pics">
+        				<img src="images/utily/loader.gif" alt="Caricamento in corso.." class="loading primoLoading" />
+                <div>Loading...</div>
+              </div>
+            </section>
+          </div>
         </div>
 
+        <footer-directive> </footer-directive>
       </div>
 
     </div>
@@ -78,16 +89,25 @@
 
     <!-- Controllers -->
     <script src="controllers/homeController.js"></script>
-
+    <script src="controllers/footerController.js"></script>
+    <script src="controllers/bioController.js"></script>
+    <script src="controllers/instagramController.js"></script>
 
     <!-- Services -->
-
+    <script src="services/variablesService.js"></script>
+    <script src="services/footerService.js"></script>
+    <script src="services/generalInfoService.js"></script>
 
     <!-- Directives -->
-
+    <script src="directives/headerDirective.js"></script>
+    <script src="directives/footerDirective.js"></script>
+    <script src="directives/bioDirective.js"></script>
 
     <!-- Graphich tools -->
-
+    <script src="js/copertina.js"></script>
+    <script src="js/console-message.js"></script>
+    <script src="js/photo-scroll.js"></script>
+    <script src="js/modernizr.custom.18210.js"></script>
 
   </body>
 </html>

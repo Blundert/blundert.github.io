@@ -1,0 +1,18 @@
+.copertina
+{
+    position: relative;
+    width: 90%;
+    background-color: #000;
+    background-image: url("../img/404.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    z-index: -1;
+    margin-left: 5%;
+    background-repeat: no-repeat;
+}
+
+header{
+  background-color: rgba(255, 0, 0, 0);
+}

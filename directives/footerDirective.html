@@ -1,0 +1,47 @@
+<div class="fascia logo">
+
+      <div>
+
+          <img src="images/icon/icon-grande.png" />
+
+      </div>
+
+  </div>
+<footer ng-controller="footerController">
+  <div class="prima-riga contenitore">
+    <ul>
+      <li class="no-bullet"><span>{{footerVariable.description[0].string}}</span></li>
+      <li >
+        <a title="{{footerVariable.description[1].string}}" href="{{footerVariable.description[1].link}}" >{{footerVariable.description[1].string}}</a>
+      </li>
+    </ul>
+    <ul class="social-footer">
+
+    <span ng-repeat="s in footerVariable.social">
+      <span ng-if="$index == 0">
+        <li class="no-bullet">  <a title="Link {{s.name}}" href="{{s.link}}">{{s.name}}</a> </li>
+      </span>
+      <span ng-if="$index != 0">
+        <li> <a title="Link {{s.name}}" href="{{s.link}}">{{s.name}}</a> </li>
+      </span>
+    </span>
+    </ul>
+  </div>
+
+  <div class="seconda-riga">
+    <div class="contenitore">
+        <ul  ng-repeat="a in footerVariable.authors">
+
+          <span ng-if="$index == 0">
+            <li> <span>developed by </span> </li>
+          </span>
+            <p ng-if="$index > 1">
+              ,
+            </p>
+            <li>  <a title="{{a.name}}" href="{{a.link}}">{{a.name}}</a>  </li>
+
+        </ul>
+
+    </div>
+  </div>
+</footer>
