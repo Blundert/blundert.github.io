@@ -17,6 +17,21 @@
     <base href="/">
 
     <!-- Meta Tag -->
+    <link rel="icon" href="images/icon/logo.png" type="image/png" />
+    <meta property="og:image"  content="images/me.jpg" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#d9dbc8">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#d9dbc8">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-startup-image" href="image/icon/icon-grande.png">
+    <link rel="apple-touch-icon" href="image/icon/icon-grande.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="image/icon/icon-grande.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="image/icon/icon-grande.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="image/icon/icon-grande.png">
+
 
     <!-- Mobile view -->
     <meta name="viewport" content="width=device-width, user-scalable=yes">
@@ -44,13 +59,14 @@
     <!-- Include Angular-animate from Bower -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.8/angular-css.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script type="text/javascript" src="https://blundert-backend.herokuapp.com/bower_components/ngMeta/dist/ngMeta.min.js"></script>
     <!-- Angular Material Library -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
   </head>
 
@@ -71,7 +87,7 @@
             <section>
               <div class="pics">
         				<img src="images/utily/loader.gif" alt="Caricamento in corso.." class="loading primoLoading" />
-                <div>Loading...</div>
+                <div class="margin-loading-word">Loading...</div>
               </div>
             </section>
           </div>
@@ -104,6 +120,7 @@
     <script src="directives/bioDirective.js"></script>
 
     <!-- Graphich tools -->
+    <script src="js/logo.js"></script>
     <script src="js/copertina.js"></script>
     <script src="js/console-message.js"></script>
     <script src="js/photo-scroll.js"></script>

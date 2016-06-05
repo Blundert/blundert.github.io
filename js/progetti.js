@@ -155,13 +155,8 @@ function eventiTesto()
 
       if($(this).find(".titoloProgetto").height()>$(this).find(".details").height()+20) // se è troppo grande ridimensiono
       {
-        console.log($(this).find(".titoloProgetto").text() );
-        console.log($(this).find(".titoloProgetto").height());
-        console.log($(this).find(".details").height());
         var rapporto=$(this).find(".titoloProgetto").height()/$(this).find(".details").height();
-        console.log(rapporto);
         rapporto=arrotonda(rapporto,0);
-        console.log(rapporto);
         $(this).find(".titoloProgetto").css("font-size",$(this).find(".details").height()/rapporto);
       }
 

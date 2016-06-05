@@ -14,8 +14,6 @@ app.factory("copertina", [ function() {
           if(document.location.pathname.match(/[^\/]+$/))
             urlSito=document.location.pathname.match(/[^\/]+$/)[0];
           if($("head").find("title").text()!="Errore - Matteo Granzotto")
-            //$(".copertina").css("background-position-y",$("header").height());
-          //$("#wrapper").css("margin-top",$("header").height()*-1).delay( 500 );
           $(".copertina").find("h1").css("padding-top",($(window).height()/100)*posizioneh1);
 
           //events
@@ -25,9 +23,6 @@ app.factory("copertina", [ function() {
               if(document.location.pathname.match(/[^\/]+$/))
                 urlSito=document.location.pathname.match(/[^\/]+$/)[0];
               if($("head").find("title").text()!="Errore - Matteo Granzotto")
-                //$(".copertina").css("background-position-y",$("header").height());
-              console.log($("header").height()*-1);
-              //$("#wrapper").css("margin-top",$("header").height()*-1).delay( 500 );
               $(".copertina").find("h1").css("padding-top",($(window).height()/100)*posizioneh1);
           });
 

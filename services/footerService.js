@@ -1,5 +1,4 @@
 app.factory("footerService", ['$http',function($http) {
-    console.log("footerService");
     return {
       getFooter : function (callback){
         var url = 'https://blundert-backend.herokuapp.com/api/footer?callback=JSON_CALLBACK';

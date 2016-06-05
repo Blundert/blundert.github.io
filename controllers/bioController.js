@@ -4,9 +4,7 @@ app.controller('bioController', ['$scope','$location','$routeParams',"generalInf
 
   var adjust = copertina.adjust();
 
-    console.log($location.path());
       var location = $location.path().replace($routeParams.lang, "");
-      console.log(location);
       var type  = "big";
       if(location=="/") {
         type = "small";

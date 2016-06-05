@@ -7,6 +7,10 @@ app.config(function ($routeProvider, $locationProvider) {
     .when('/:lang', {
       templateUrl: 'views/home.html',
       controller:"homeController",
+      meta: {
+          'title':'Home',
+          'description':'Homepage - Matteo Granzotto.'
+      },
       css: [
         {
           href: 'css/style-index.css'
@@ -31,6 +35,10 @@ app.config(function ($routeProvider, $locationProvider) {
     .when('/:lang/bio', {
       templateUrl: 'views/bio.html',
       controller:"bioController",
+      meta: {
+          'title':'Bio',
+          'description':'Bio - Matteo Granzotto.'
+      },
       css: [
         {
           href: 'css/style-bio.css'
@@ -48,6 +56,10 @@ app.config(function ($routeProvider, $locationProvider) {
     .when('/:lang/instagram', {
       templateUrl: 'views/instagram.html',
       controller:"instagramController",
+      meta: {
+          'title':'Instagram',
+          'description':'Personal instagram - Matteo Granzotto.'
+      },
       css: [
         {
           href: 'css/style-instagram.css',
@@ -67,6 +79,6 @@ app.config(function ($routeProvider, $locationProvider) {
       ]
     })
     .otherwise({
-      redirectTo: '/ita'
+      redirectTo: '/it'
     });
 });

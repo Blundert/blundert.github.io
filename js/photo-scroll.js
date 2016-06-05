@@ -38,10 +38,8 @@ app.factory("instagram", [ function() {
                 stopLoad==false &&
                 !$(".primoLoading").length
                ) {
-                 console.log("entor qui");
                $("<img/>",{class:"loading",src:"images/utily/loader.gif",alt:"Caricamento in corso.."}).appendTo(".pics");
                var ultimo = $(".feed").last().attr("id");
-               console.log(ultimo);
                flag=false;
                ajaxCallForIstagram(ultimo);
              }
@@ -107,7 +105,6 @@ app.factory("instagram", [ function() {
 
       function ajaxCallForIstagram()
       {
-        console.log('http://localhost:3000/api/instagram?max_id='+last_id);
         $.ajax({ url: "https://blundert-backend.herokuapp.com/api/instagram?max_id="+last_id,
           type: 'POST',
           contentType: "application/json",
@@ -116,7 +113,6 @@ app.factory("instagram", [ function() {
           success: function(instagramJson){
           insta=instagramJson;
 
-          console.log(JSON.parse(insta));
           elaboroInstagramJSON(JSON.parse(insta),quantiRiquadri());
           },
           error: function(){
@@ -243,7 +239,6 @@ app.factory("instagram", [ function() {
         if(document.location.pathname.match(/[^\/]+$/))
           urlSito=document.location.pathname.match(/[^\/]+$/)[0];
 
-        console.log("url "+urlSito);
         var quanti=8;
         if(urlSito)
         {

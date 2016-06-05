@@ -76,8 +76,24 @@
 .loading
 {
     margin: 0.5em;
-    padding-left: 50%;
-    margin-left: -32px;
     height: 64px;
     width: 64px;
+}
+
+.center-my-face {
+  width: 550px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.center-my-face > img {
+  max-width: 550px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.100-height {
+  height: 60vh;
 }
