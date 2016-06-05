@@ -1,7 +1,10 @@
-var app = angular.module('matteogranzotto', ['ngRoute', 'ngAnimate', 'ngMaterial', 'angularCSS']);
+var app = angular.module('matteogranzotto', ['ngRoute', 'ngAnimate', 'ngMaterial', 'angularCSS', 'ngMeta']);
 
-app.config(function ($routeProvider, $locationProvider) {
+app.config(function ($routeProvider, $locationProvider, ngMetaProvider) {
   $locationProvider.html5Mode(true);
+
+  ngMetaProvider.useTitleSuffix(true);
+  ngMetaProvider.setDefaultTitleSuffix(' | Matteo Granzotto');
 
   $routeProvider
     .when('/:lang', {
@@ -81,4 +84,7 @@ app.config(function ($routeProvider, $locationProvider) {
     .otherwise({
       redirectTo: '/it'
     });
-});
+})
+.run(['ngMeta', function(ngMeta) {
+  ngMeta.init();
+}]);
