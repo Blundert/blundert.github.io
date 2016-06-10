@@ -97,3 +97,13 @@
 .100-height {
   height: 60vh;
 }
+
+@media screen and (max-width: 550px) {
+  .center-my-face {
+    width: 100%;
+  }
+
+  .center-my-face > img {
+    max-width: 100% ;
+  }
+}
