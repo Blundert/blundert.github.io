@@ -3,5 +3,5 @@ app.directive('footerDirective', function() {
     restrict: 'E',
     scope: {},
     templateUrl: 'directives/footerDirective.html'
-  };
+ };
 });

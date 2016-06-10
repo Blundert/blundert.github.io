@@ -50,3 +50,7 @@ html {
 .margin-loading-word {
   margin: 2em;
 }
+
+.flipInX, .slideInUp, .fadeIn {
+  animation-duration: 1s;
+}

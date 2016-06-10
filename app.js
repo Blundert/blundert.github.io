@@ -1,3 +1,10 @@
+/**
+ * angular-motion
+ * @version v0.4.4 - 2016-03-31
+ * @link http://mgcrea.github.io/angular-motion
+ * @author Olivier Louvignes <olivier@mg-crea.com> (https://github.com/mgcrea)
+ * @license MIT License, http://www.opensource.org/licenses/MIT
+ */
 var app = angular.module('matteogranzotto', ['ngRoute', 'ngAnimate', 'ngMaterial', 'angularCSS', 'ngMeta']);
 
 app.config(function ($routeProvider, $locationProvider, ngMetaProvider) {

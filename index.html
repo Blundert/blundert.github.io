@@ -43,7 +43,8 @@
     <!-- Angular Material style sheet -->
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
     <!-- Motion Animation CSS -->
-    <link rel="stylesheet" href="https://blundert-backend.herokuapp.com/bower_components/motion-ui/dist/motion-ui.min.css"></link>
+    <link rel="stylesheet" href="https://blundert-backend.herokuapp.com/bower_components/animate.css/animate.min.css">
+
     <!-- Main CSS of the App -->
     <link href="css/style.css" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="css/style-header.css">
@@ -65,7 +66,8 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="https://blundert-backend.herokuapp.com/bower_components/motion-ui/dist/motion-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 
   </head>
 
@@ -79,17 +81,10 @@
 
 
       <!-- AngularJS's views -->
-      <div id="wrapper">
+      <div id="wrapper" ng-controller="appController">
+
         <div data-ng-view>
-          <div class="contenitore-1280">
-            <div class="riferimento"></div>
-            <section>
-              <div class="pics">
-        				<img src="images/utily/loader.gif" alt="Caricamento in corso.." class="loading primoLoading" />
-                <div class="margin-loading-word">Loading...</div>
-              </div>
-            </section>
-          </div>
+
         </div>
 
         <footer-directive> </footer-directive>
@@ -103,6 +98,7 @@
     <script src="app.js"></script>
 
     <!-- Controllers -->
+    <script src="controllers/appController.js"></script>
     <script src="controllers/homeController.js"></script>
     <script src="controllers/footerController.js"></script>
     <script src="controllers/bioController.js"></script>
@@ -112,6 +108,7 @@
     <script src="services/variablesService.js"></script>
     <script src="services/footerService.js"></script>
     <script src="services/generalInfoService.js"></script>
+    <script src="services/homeService.js"></script>
 
     <!-- Directives -->
     <script src="directives/headerDirective.js"></script>
@@ -121,10 +118,10 @@
     <!-- Graphich tools -->
     <script src="js/logo.js"></script>
     <script src="js/copertina.js"></script>
-    <script src="js/home.js"></script>
     <script src="js/console-message.js"></script>
     <script src="js/photo-scroll.js"></script>
     <script src="js/modernizr.custom.18210.js"></script>
+
 
   </body>
 </html>
