@@ -3,5 +3,6 @@ app.controller('homeController', ['$scope','$location','$routeParams',"variables
       variablesService.getVariables($routeParams.lang);
       var adjust= logo.adjust();
       var instagram = instagram.create();
-
+      var $yeti = $('.center-my-face');
+      MotionUI.animateIn($yeti, "scale-in-up");
 }]);
