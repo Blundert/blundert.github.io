@@ -164,7 +164,7 @@ app.factory("instagram", [ function() {
             if(quanti==8)
             {
               $('<div class="feed item" id="' + (cont+1) + '">' +
-                '<a href="instagram"><img src="' + insta.data[key].images.standard_resolution.url + '" class="immagine" /></a>'+text+'</div>').appendTo('.pics');
+                '<a href="/it/instagram"><img src="' + insta.data[key].images.standard_resolution.url + '" class="immagine" /></a>'+text+'</div>').appendTo('.pics');
               $(img).load(function (){
                 $(".item").find("[src='"+this.src+"' ]").parent().parent().css({"background-image":"none"});
                 $(this).parent().css({"background-color":"red"});
