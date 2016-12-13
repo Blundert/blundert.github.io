@@ -43,27 +43,27 @@ app.config(function ($routeProvider, $locationProvider, ngMetaProvider) {
         }
       ]
     })
-    .when('/:lang/bio', {
-      templateUrl: 'views/bio.html',
-      controller:"bioController",
-      meta: {
-          'title':'Bio',
-          'description':'Bio - Matteo Granzotto.'
-      },
-      css: [
-        {
-          href: 'css/style-bio.css'
-        }
-      ]
-    })
-    .when('/:lang/progetti', {
-      templateUrl: 'views/projects.html',
-      controller:"homeController"
-    })
-    .when('/:lang/projects', {
-      templateUrl: 'views/projects.html',
-      controller:"homeController"
-    })
+    //.when('/:lang/bio', {
+    //  templateUrl: 'views/bio.html',
+    //  controller:"bioController",
+    //  meta: {
+    //      'title':'Bio',
+    //      'description':'Bio - Matteo Granzotto.'
+    //  },
+    //  css: [
+    //    {
+    //      href: 'css/style-bio.css'
+    //    }
+    //  ]
+    //})
+    //.when('/:lang/progetti', {
+    //  templateUrl: 'views/projects.html',
+    //  controller:"homeController"
+    //})
+    //.when('/:lang/projects', {
+    //  templateUrl: 'views/projects.html',
+    //  controller:"homeController"
+    //})
     .when('/:lang/instagram', {
       templateUrl: 'views/instagram.html',
       controller:"instagramController",

@@ -14,9 +14,9 @@ app.controller('bioController', ['$scope','$location','$routeParams',"generalInf
 
       var location = $location.path().replace($routeParams.lang, "");
       var type  = "big";
-      if(location=="/") {
-        type = "small";
-      }
+      //if(location=="/") {
+      //  type = "small";
+      //}
 
 
 
