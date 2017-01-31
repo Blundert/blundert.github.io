@@ -54,26 +54,17 @@ gulp.task('html', ['inject', 'partials'], function () {
     .pipe(cssFilter)                  // filter all files to retry only css files
     .pipe(modifyCssUrls({
       modify: function (url, filePath) {
-
         // check if the url is an asset one or other kind
         var urlArray = url.split("/");
-
         if(urlArray.indexOf("assets") != -1) {
             return url;
         }
         else {
-            // creo un pattern che deve fare il match con il nome dei font
             var regex   = new RegExp('(([0-9a-zA-Z-])*.(otf|eot|svg|ttf|woff2|woff))', 'g');
-            // eseguo la ricerca nel file css che si sta controllando
             var result  = regex.exec(url);
-            // se il risultato presenta più valori, mi devo salvare il primo, altrimento prendo la stringa
             result      = result instanceof  Array ? result[0] : result;
-            // ritorna il nome del font concatenato con il percorso dei font nella dist se è stato trovato qualcosa da sostituire
-            // altrimenti ritorno il percorso originale (fatto perché questa funzione prende in input anche i file css personali e non solo quelli di bower che ci interessa esaminare)
             return result !== null ? '../fonts/' + result : url;
         }
-
-
       }
     }))
     .pipe($.csso())
