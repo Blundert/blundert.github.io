@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'SanFransiscoDisplayLight';
+    src: url("/assets/fonts/SanFrancisco/SanFranciscoDisplay-Thin.otf") format('otf'),
+    url("/assets/fonts/SanFrancisco/SanFranciscoDisplay-Thin.svg") format('svg'),
+    url("/assets/fonts/SanFrancisco/SanFranciscoDisplay-Thin.woff") format('woff'),
+    url("/assets/fonts/SanFrancisco/SanFranciscoDisplay-Thin.woff2") format('woff2'),
+    url("/assets/fonts/SanFrancisco/SanFranciscoDisplay-Thin.ttf") format('ttf');
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
