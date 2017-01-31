@@ -1,3 +1,7 @@
-tmp
-.DS_Store
+node_modules/
+dist
+.tmp
 .idea
+.sass-cache/
+bower_components/
+doc
