@@ -1,0 +1,19 @@
+/**
+ *  Do not remove this comments bellow. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+$mainColor : #d9dbc8; 
+$secondColor: #3C4750;
+$iron : #ECECEC;
+$alluminium : #5A5A5A;
+$darkgray: #5E5E5E;
+
+
+@import "index.scss";
+@import "../components/loading/loading.scss";
+@import "../components/main/main.scss";
+@import "../components/home/home.scss";
+
