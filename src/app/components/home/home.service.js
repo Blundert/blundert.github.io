@@ -32,7 +32,7 @@ var HomeService =
         // public
         function getImage() {
           var deferred= $q.defer();
-          var url = '/assets/images/me.jpg';
+          var url = 'assets/images/me.jpg';
           $http
             .get(url)
             .then(
