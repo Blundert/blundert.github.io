@@ -1,0 +1,6 @@
+<div ng-show="$ctrl.allLoaded">
+        <ui-view></ui-view>
+</div>
+<div layout="row" ng-show="!$ctrl.allLoaded">
+  <loading-component></loading-component>
+</div>

@@ -1,8 +1,11 @@
-tmp
-.DS_Store
+node_modules/
+.tmp
 .idea
 node_modules/
 bower_components/
 .tmp/
 dist/
 blundert/
+.sass-cache/
+bower_components/
+doc
