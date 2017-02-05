@@ -11,8 +11,6 @@ var $             = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
 });
 
-
-
 gulp.task('partials', function () {
   return gulp.src([
     path.join(conf.paths.src, '/app/**/**/*.html'),
@@ -111,12 +109,18 @@ gulp.task('other', function () {
 
 });
 
+gulp.task('serviceworker', function () {
+  return gulp
+    .src('service-worker/*')
+    .pipe(gulp.dest('blundert/'));  
+});
+
 gulp.task('clean', function (done) {
   $.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')], done);
 });
 
 gulp.task('build:dist', function(cb){
-  sequence('clean', ['html', 'fonts', 'other'], cb);
+  sequence('clean', ['html', 'fonts', 'other', 'serviceworker'], cb);
 });
 
 gulp.task('build', function(cb){
