@@ -15,7 +15,7 @@ self.toolbox.options.cache = {
 self.toolbox.precache(
   [
     './scripts/app.js',
-    './scripts/vensor.js',
+    './scripts/vendor.js',
     './styles/app.css',
     './styles/vendor.css',
     'index.html',
