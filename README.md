@@ -4,11 +4,11 @@
 
 <p data-height="265" data-theme-id="0" data-slug-hash="PWQEgG" data-default-tab="css,result" data-user="Blundert" data-embed-version="2" data-pen-title="My card badge" class="codepen">See my Pen <a href="http://codepen.io/Blundert/pen/PWQEgG/">My card badge</a> on <a href="http://codepen.io/Blundert">CodePen</a>.</p>
 
-## Angular on github page. 
+## Angular on github page
 
 ### Angular project
 
-Create your progect on Angular with your favorite build management. Build project in a folder with different name from 'dist'. 
+Create your progect on Angular with your favorite build management. Build project in a folder with a different name from 'dist'. 
 
 ### 404 and index.html 
 
