@@ -1,6 +1,6 @@
 # Matteo Granzotto GitHub Page
 
-<img src="https://raw.githubusercontent.com/Blundert/blundert.github.io/master/src/assets/images/blundert.gitbub.io.gif" />
+<img src="https://raw.githubusercontent.com/Blundert/blundert.github.io/master/blundert/assets/images/blundert.gitbub.io..gif" />
 
 <p data-height="265" data-theme-id="0" data-slug-hash="PWQEgG" data-default-tab="css,result" data-user="Blundert" data-embed-version="2" data-pen-title="My card badge" class="codepen">See my Pen <a href="http://codepen.io/Blundert/pen/PWQEgG/">My card badge</a> on <a href="http://codepen.io/Blundert">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
